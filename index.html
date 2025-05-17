@@ -4,26 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TransformEXL Ai - Setup & Guidance</title>
-    <!-- Link to Tailwind CSS (for this standalone example) -->
-    <!-- In a real project, Tailwind would be part of your build process -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Custom styles if needed, or to define theme colors */
         body {
-            font-family: 'Inter', sans-serif; /* A clean, modern font */
+            font-family: 'Inter', sans-serif;
+            /* --- Background Style from Option 1 --- */
+            background-color: #f8fafc; /* Tailwind's bg-slate-50 */
+            background-image:
+                linear-gradient(45deg, rgba(203, 213, 225, 0.25) 1px, transparent 1px), 
+                /* slate-300 with 25% opacity */
+                linear-gradient(-45deg, rgba(203, 213, 225, 0.25) 1px, transparent 1px);
+            background-size: 28px 28px; /* Slightly larger pattern */
+            background-position: 0 0, 14px 14px; /* Offset for mesh */
         }
-        .gradient-text {
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-        }
-        /* Add @import for Google Fonts if not using a system font stack */
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        /* Optional: Add a subtle overlay to the entire page content if needed for contrast */
+        /* .content-wrapper { background-color: rgba(255, 255, 255, 0.95); } */
     </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased">
+<body class="text-slate-800 antialiased"> {/* Removed bg-slate-50 as it's in <style> now */}
 
-    <div class="container mx-auto px-4 py-12 md:py-20 max-w-4xl">
+    <div class="container mx-auto px-4 py-12 md:py-20 max-w-4xl"> {/* class="content-wrapper rounded-xl shadow-2xl" (if using overlay) */}
 
         <header class="text-center mb-12 md:mb-16">
             <h1 class="text-4xl md:text-5xl font-bold mb-4 text-slate-900"> 
@@ -36,7 +38,8 @@
         </header>
 
         <main>
-            <section class="mb-10 p-6 bg-white rounded-xl shadow-lg">
+            {/* For Option 3 (image background), you'd add bg-white/90 backdrop-blur-sm to sections */}
+            <section class="mb-10 p-6 md:p-8 bg-white rounded-xl shadow-xl">
                 <h2 class="text-2xl font-semibold mb-4 text-slate-700 border-b pb-2">Welcome to TransformEXL Ai!</h2>
                 <div class="prose prose-slate max-w-none text-slate-600 space-y-4">
                     <p>
@@ -51,7 +54,7 @@
                 </div>
             </section>
 
-            <section class="mb-10 p-6 bg-gradient-to-br from-red-50 to-orange-50 border-l-4 border-red-500 rounded-xl shadow-lg">
+            <section class="mb-10 p-6 md:p-8 bg-gradient-to-br from-red-50 via-orange-50 to-amber-50 border-l-4 border-red-500 rounded-xl shadow-xl">
                 <h2 class="text-xl font-semibold mb-3 text-red-700 flex items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 mr-2">
                         <path fill-rule="evenodd" d="M9.401 3.003c1.155-2 4.043-2 5.197 0l7.519 13.007a3.001 3.001 0 0 1-2.599 4.504H4.481a3.001 3.001 0 0 1-2.598-4.504L9.4 3.003ZM12 8.25a.75.75 0 0 1 .75.75v3.75a.75.75 0 0 1-1.5 0V9a.75.75 0 0 1 .75-.75Zm0 8.25a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" clip-rule="evenodd" />
@@ -66,10 +69,12 @@
                 </p>
             </section>
 
-            <section class="p-6 bg-white rounded-xl shadow-lg">
+            <section class="p-6 md:p-8 bg-white rounded-xl shadow-xl">
                 <h2 class="text-2xl font-semibold mb-6 text-slate-700 border-b pb-3">Setup & Guidance Steps</h2>
-                <ol class="list-decimal list-outside space-y-6 pl-5 text-slate-600">
-                    <li class="pl-2">
+                <ol class="list-decimal list-outside space-y-8 pl-5 text-slate-600"> {/* Increased space-y */}
+                    {/* ... rest of your <ol> list items ... they remain the same, but will sit on the new body background */}
+                    {/* Example of one list item for structure reference */}
+                     <li class="pl-2">
                         <h3 class="font-semibold text-slate-700 mb-1">File Uploads</h3>
                         <p>You can upload multiple Excel files (`.xlsx`, `.xls`).</p>
                         <p>The maximum file size is currently **50MB per file**.</p>
@@ -77,7 +82,7 @@
                             <p><strong class="font-medium">Tip:</strong> For larger datasets, consider splitting them into multiple smaller files if possible, or ensure your connection is stable during upload.</p>
                         </div>
                     </li>
-
+                    {/* ... other li items ... */}
                     <li class="pl-2">
                         <h3 class="font-semibold text-slate-700 mb-1">Processing Time</h3>
                         <p>After uploading, please allow some time for processing:</p>
@@ -133,8 +138,7 @@
                 </ol>
             </section>
 
-            <!-- Placeholder for Reference Images -->
-            <section class="mt-10 p-6 bg-white rounded-xl shadow-lg">
+            <section class="mt-10 p-6 md:p-8 bg-white rounded-xl shadow-xl">
                 <h2 class="text-2xl font-semibold mb-4 text-slate-700 border-b pb-2">Reference: Supported Excel Formats</h2>
                 <p class="text-slate-600 mb-4">Below are examples of Excel structures our AI can effectively process.</p>
                 <div class="grid md:grid-cols-2 gap-6">
