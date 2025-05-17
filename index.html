@@ -1,81 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Guidance Doc</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 700px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-      line-height: 1.6;
-      color: #333;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    h1 {
-      color: #007acc;
-    }
-    nav a {
-      margin: 0 1rem;
-      text-decoration: none;
-      color: #007acc;
-    }
-    section + section {
-      margin-top: 2rem;
-    }
-    footer {
-      margin-top: 3rem;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #666;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TransformEXL Ai - Setup & Guidance</title>
+    <!-- Link to Tailwind CSS (for this standalone example) -->
+    <!-- In a real project, Tailwind would be part of your build process -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles if needed, or to define theme colors */
+        body {
+            font-family: 'Inter', sans-serif; /* A clean, modern font */
+        }
+        .gradient-text {
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        /* Add @import for Google Fonts if not using a system font stack */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+    </style>
 </head>
-<body>
-  <header>
-    <h1>Project Guidance</h1>
-    <nav>
-      <a href="#intro">Introduction</a> |
-      <a href="#steps">Steps</a> |
-      <a href="#resources">Resources</a>
-    </nav>
-  </header>
+<body class="bg-slate-50 text-slate-800 antialiased">
 
-  <section id="intro">
-    <h2>Introduction</h2>
-    <p>
-      Welcome to the guidance document for our project. This page is hosted
-      for free using GitHub Pages—no domain purchase required!
-    </p>
-  </section>
+    <div class="container mx-auto px-4 py-12 md:py-20 max-w-4xl">
 
-  <section id="steps">
-    <h2>Setup Steps</h2>
-    <ol>
-      <li>Create a GitHub repo named <code>username.github.io</code> (replace <code>username</code> with your GitHub handle).</li>
-      <li>Clone the repo locally or upload files via the GitHub web interface.</li>
-      <li>Add this <code>index.html</code> into the root of the repo.</li>
-      <li>Commit and push your changes.</li>
-      <li>In the repo’s **Settings → Pages**, ensure **Branch: main** (or **master**) and **/ (root)** are selected, then save.</li>
-      <li>Visit <code>https://username.github.io/</code> in your browser—your page is live!</li>
-    </ol>
-  </section>
+        <header class="text-center mb-12 md:mb-16">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">
+                <span class="gradient-text bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400">TransformEXL Ai</span>
+            </h1>
+            <p class="text-lg text-slate-600">
+                Your Intelligent Assistant for Excel Data Transformation & Analysis
+            </p>
+            <p class="mt-2 text-sm text-slate-500">Contact: <a href="mailto:example@gmail.com" class="text-blue-600 hover:underline">example@gmail.com</a></p>
+        </header>
 
-  <section id="resources">
-    <h2>Resources</h2>
-    <ul>
-      <li><a href="https://docs.github.com/en/pages">GitHub Pages Documentation</a></li>
-      <li><a href="https://guides.github.com/features/pages/">GitHub Pages Guide</a></li>
-    </ul>
-  </section>
+        <main>
+            <section class="mb-10 p-6 bg-white rounded-xl shadow-lg">
+                <h2 class="text-2xl font-semibold mb-4 text-slate-700 border-b pb-2">Welcome to TransformEXL Ai!</h2>
+                <div class="prose prose-slate max-w-none text-slate-600 space-y-4">
+                    <p>
+                        TransformEXL Ai, powered by advanced language models like Gemini, is designed to revolutionize how you interact with and extract insights from your Excel data. We understand that spreadsheets can hold vast amounts of information, often in complex structures. Our platform intelligently processes your Excel files, identifies tabular data (even multiple tables across sheets or within a single sheet), and prepares it for powerful analysis, querying, and visualization.
+                    </p>
+                    <p>
+                        Whether you're dealing with sales figures, operational data, financial reports, or any other structured information in Excel, TransformEXL Ai aims to simplify your workflow, automate tedious data preparation tasks, and unlock the stories hidden within your spreadsheets.
+                    </p>
+                    <p>
+                        This guide will walk you through the initial setup and provide best practices for using the platform effectively.
+                    </p>
+                </div>
+            </section>
 
-  <footer>
-    <p>© 2025 Your Name</p>
-  </footer>
+            <section class="mb-10 p-6 bg-gradient-to-br from-red-50 to-orange-50 border-l-4 border-red-500 rounded-xl shadow-lg">
+                <h2 class="text-xl font-semibold mb-3 text-red-700 flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 mr-2">
+                        <path fill-rule="evenodd" d="M9.401 3.003c1.155-2 4.043-2 5.197 0l7.519 13.007a3.001 3.001 0 0 1-2.599 4.504H4.481a3.001 3.001 0 0 1-2.598-4.504L9.4 3.003ZM12 8.25a.75.75 0 0 1 .75.75v3.75a.75.75 0 0 1-1.5 0V9a.75.75 0 0 1 .75-.75Zm0 8.25a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" clip-rule="evenodd" />
+                    </svg>
+                    Most Important: Access & Permissions
+                </h2>
+                <p class="text-slate-700">
+                    By default, new users will not have permission to upload data or access workspaces. To get started, please request permission by emailing us at <a href="mailto:example@gmail.com" class="font-medium text-red-600 hover:underline">example@gmail.com</a>.
+                </p>
+                <p class="text-slate-700 mt-2">
+                    You will typically receive access to a dedicated workspace within **24-48 hours**.
+                </p>
+            </section>
+
+            <section class="p-6 bg-white rounded-xl shadow-lg">
+                <h2 class="text-2xl font-semibold mb-6 text-slate-700 border-b pb-3">Setup & Guidance Steps</h2>
+                <ol class="list-decimal list-outside space-y-6 pl-5 text-slate-600">
+                    <li class="pl-2">
+                        <h3 class="font-semibold text-slate-700 mb-1">File Uploads</h3>
+                        <p>You can upload multiple Excel files (`.xlsx`, `.xls`).</p>
+                        <p>The maximum file size is currently **50MB per file**.</p>
+                        <div class="mt-2 p-3 bg-blue-50 border-l-4 border-blue-400 text-blue-700 rounded-md text-sm">
+                            <p><strong class="font-medium">Tip:</strong> For larger datasets, consider splitting them into multiple smaller files if possible, or ensure your connection is stable during upload.</p>
+                        </div>
+                    </li>
+
+                    <li class="pl-2">
+                        <h3 class="font-semibold text-slate-700 mb-1">Processing Time</h3>
+                        <p>After uploading, please allow some time for processing:</p>
+                        <ul class="list-disc list-outside pl-5 mt-1 space-y-1">
+                            <li>**Small files (under 5MB):** Typically around 30 seconds to a minute.</li>
+                            <li>**Larger files (closer to 50MB):** May take a few minutes.</li>
+                        </ul>
+                        <p class="mt-1">Processing involves data extraction, table detection, and schema inference.</p>
+                    </li>
+
+                    <li class="pl-2">
+                        <h3 class="font-semibold text-slate-700 mb-1">Supported Data Structures</h3>
+                        <p>Upload well-structured tabular data. TransformEXL Ai is designed to be flexible:</p>
+                        <ul class="list-disc list-outside pl-5 mt-1 space-y-1">
+                            <li>**Single table per sheet:** Standard Excel format.</li>
+                            <li>**Multiple sheets per file:** Each sheet can contain one or more tables.</li>
+                            <li>**Multiple tables within a single sheet:** Our AI can often detect distinct tables even if they are on the same sheet, provided there's some visual separation (e.g., a few empty rows/columns between them).</li>
+                        </ul>
+                        <p class="mt-2">
+                            <em class="text-slate-500">We will share reference images below illustrating these supported formats for clarity.</em>
+                        </p>
+                         <div class="mt-2 p-3 bg-green-50 border-l-4 border-green-500 text-green-700 rounded-md text-sm">
+                            <p><strong class="font-medium">Best Practice:</strong> While we support complex layouts, cleaner data with clearly defined tables (ideally one table per sheet or well-separated tables) will yield the best and fastest results.</p>
+                        </div>
+                    </li>
+
+                    <li class="pl-2">
+                        <h3 class="font-semibold text-slate-700 mb-1">Unsupported Content</h3>
+                        <p>Currently, TransformEXL Ai focuses on **data within cells**. Please **do not** upload Excel files that heavily rely on or contain:
+                        </p>
+                        <ul class="list-disc list-outside pl-5 mt-1 space-y-1">
+                            <li>Embedded images or charts within the spreadsheet cells (these will be ignored).</li>
+                            <li>Complex macros (they will not be executed).</li>
+                            <li>Password-protected files (please remove protection before uploading).</li>
+                        </ul>
+                    </li>
+
+                    <li class="pl-2">
+                        <h3 class="font-semibold text-slate-700 mb-1">Beta Program & Feedback</h3>
+                        <p>
+                            For our initial group of beta testers, access to TransformEXL Ai is **free of cost**.
+                        </p>
+                        <p>
+                            In return, we deeply value your **feedback** on usability, features, and any issues you encounter. Your insights are crucial for improving the platform.
+                        </p>
+                        <p>
+                            Active contributors who provide significant feedback that helps us enhance TransformEXL Ai will be eligible for **freebies and special perks** as a token of our appreciation!
+                        </p>
+                         <div class="mt-2 p-3 bg-indigo-50 border-l-4 border-indigo-500 text-indigo-700 rounded-md text-sm">
+                            <p><strong class="font-medium">We're excited to have you on board!</strong> Your experience matters to us.</p>
+                        </div>
+                    </li>
+                </ol>
+            </section>
+
+            <!-- Placeholder for Reference Images -->
+            <section class="mt-10 p-6 bg-white rounded-xl shadow-lg">
+                <h2 class="text-2xl font-semibold mb-4 text-slate-700 border-b pb-2">Reference: Supported Excel Formats</h2>
+                <p class="text-slate-600 mb-4">Below are examples of Excel structures our AI can effectively process.</p>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-medium text-slate-700 mb-2">Example 1: Single Table per Sheet</h4>
+                        <div class="border rounded-lg p-4 bg-slate-100 text-sm text-slate-500 h-48 flex items-center justify-center">
+                            [Image placeholder for a clean Excel sheet with one table]
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="font-medium text-slate-700 mb-2">Example 2: Multiple Tables in One Sheet (Separated)</h4>
+                        <div class="border rounded-lg p-4 bg-slate-100 text-sm text-slate-500 h-48 flex items-center justify-center">
+                            [Image placeholder for an Excel sheet with 2-3 tables separated by blank rows/columns]
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="text-center mt-16 pt-8 border-t border-slate-200">
+            <p class="text-sm text-slate-500">© <script>document.write(new Date().getFullYear())</script> TransformEXL Ai. All rights reserved.</p>
+        </footer>
+
+    </div>
+
 </body>
 </html>
