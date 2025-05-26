@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TransformEXL Ai - Setup & Guidance</title>
+  <title>TransformEXL AI - Setup & Guidance</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     /* Import Inter font */
@@ -11,159 +11,120 @@
 
     body {
       font-family: 'Inter', sans-serif;
-      /* Background Style from Option 1 */
-      background-color: #f8fafc; /* Tailwind's bg-slate-50 */
+      background-color: #f8fafc;
       background-image:
         linear-gradient(45deg, rgba(203, 213, 225, 0.25) 1px, transparent 1px),
-        /* slate-300 with 25% opacity */
         linear-gradient(-45deg, rgba(203, 213, 225, 0.25) 1px, transparent 1px);
-      background-size: 28px 28px; /* Slightly larger pattern */
-      background-position: 0 0, 14px 14px; /* Offset for mesh */
+      background-size: 28px 28px;
+      background-position: 0 0, 14px 14px;
     }
-    /* Optional: .content-wrapper overlay, uncomment if needed
-    .content-wrapper {
-      background-color: rgba(255, 255, 255, 0.95);
-    }
-    */
   </style>
 </head>
 <body class="text-slate-800 antialiased">
-
   <div class="container mx-auto px-4 py-12 md:py-20 max-w-4xl">
-
+    <!-- Header -->
     <header class="text-center mb-12 md:mb-16">
-      <h1 class="text-4xl md:text-5xl font-bold mb-4 text-slate-900">
-        TransformEXL AI
-      </h1>
-      <p class="text-lg text-slate-600">
-        Your Intelligent Assistant for Tabular Data Transformation & Analysis
-      </p>
-      <p class="mt-2 text-sm text-slate-500">
-        Contact: <a href="mailto:example@abc.com" class="text-blue-600 hover:underline">example@abc.com</a>
-      </p>
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 text-slate-900">TransformEXL AI</h1>
+      <p class="text-lg text-slate-600">Your intelligent assistant for Tabular Data Transformation & Analysis</p>
+      <p class="mt-2 text-sm text-slate-500">Contact: <a href="mailto:example@abc.com" class="text-blue-600 hover:underline">example@abc.com</a></p>
     </header>
 
-    <main>
-      <section class="mb-10 p-6 md:p-8 bg-white rounded-xl shadow-xl">
-        <h2 class="text-2xl font-semibold mb-4 text-slate-700 border-b pb-2">
-          Welcome to TransformEXL AI!
-        </h2>
-        <div class="prose prose-slate max-w-none text-slate-600 space-y-4">
-          <p>
-            TransformEXL AI, powered by Gemini, is designed to revolutionize how you interact with and extract insights from your data. We understand that spreadsheets can hold vast amounts of information, often in complex structures. Our platform intelligently processes your spreadsheet files, identifies tabular data (even multiple tables across sheets or within a single sheet), and prepares it for powerful analysis, easy querying, and visualization.
-          </p>
-          <p>
-            Whether you're dealing with sales figures, operational data, financial reports, or any other structured information in a spreadsheet format, TransformEXL AI aims to simplify your workflow, automate tedious data preparation tasks, and unlock the stories hidden within your spreadsheets.
-          </p>
-          <p>
-            This guide will walk you through the initial setup and provide best practices for using the platform effectively.
-          </p>
-        </div>
-      </section>
+    <!-- Welcome Section -->
+    <section class="mb-10 p-6 md:p-8 bg-white rounded-xl shadow-xl">
+      <h2 class="text-2xl font-semibold mb-4 text-slate-700 border-b pb-2">Welcome to TransformEXL AI</h2>
+      <div class="prose prose-slate max-w-none text-slate-600 space-y-4">
+        <p>TransformEXL AI, powered by Gemini, is designed to revolutionize how you interact with and extract insights from your data. We understand that spreadsheets can hold vast amounts of information, often in complex structures. Our platform intelligently processes your spreadsheet files, identifies tabular data (even multiple tables across sheets or within a single sheet), and prepares it for powerful analysis, easy querying, and visualization.</p>
+        <p>Whether you're dealing with sales figures, operational data, financial reports, or any other structured information in a spreadsheet format, TransformEXL AI aims to simplify your workflow, automate tedious data preparation tasks, and unlock the stories hidden within your spreadsheets.</p>
+        <p>This guide will walk you through the initial setup and provide best practices for using the platform effectively.</p>
+      </div>
+    </section>
 
-      <section class="mb-10 p-6 md:p-8 bg-gradient-to-br from-red-50 via-orange-50 to-amber-50 border-l-4 border-red-500 rounded-xl shadow-xl">
-        <h2 class="text-xl font-semibold mb-3 text-red-700 flex items-center">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 mr-2">
-            <path fill-rule="evenodd" d="M9.401 3.003c1.155-2 4.043-2 5.197 0l7.519 13.007a3.001 3.001 0 0 1-2.599 4.504H4.481a3.001 3.001 0 0 1-2.598-4.504L9.4 3.003ZM12 8.25a.75.75 0 0 1 .75.75v3.75a.75.75 0 0 1-1.5 0V9a.75.75 0 0 1 .75-.75Zm0 8.25a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Z" clip-rule="evenodd" />
-          </svg>
-          Most Important: Access & Permissions
-        </h2>
-        <p class="text-slate-700">
-          By default, new users will not have permission to upload data or access workspaces. To get started, please request permission by emailing us at
-          <a href="mailto:example@abc.com" class="font-medium text-red-600 hover:underline">example@abc.com</a>.
-        </p>
-        <p class="text-slate-700 mt-2">
-          You will typically receive access to a dedicated workspace within <strong>24–48 hours</strong>.
-        </p>
-      </section>
-
-      <section class="p-6 md:p-8 bg-white rounded-xl shadow-xl">
-        <h2 class="text-2xl font-semibold mb-6 text-slate-700 border-b pb-3">
-          Setup & Guidance Steps
-        </h2>
-        <ol class="list-decimal list-outside space-y-8 pl-5 text-slate-600">
-          <li class="pl-2">
-            <h3 class="font-semibold text-slate-700 mb-1">File Uploads</h3>
-            <p>You can upload files in the following formats: <code>.xlsx</code>, <code>.xls</code>, <code>.csv</code>.</p>
-            <p>The maximum file size is currently <strong>50 MB per file</strong>.</p>
-            <div class="mt-2 p-3 bg-blue-50 border-l-4 border-blue-400 text-blue-700 rounded-md text-sm">
-              <p><strong class="font-medium">Tip:</strong> If you want to process larger files, consider splitting them into separate files and feeding them one by one, or ensure your connection is stable during upload.</p>
-            </div>
-          </li>
-          <li class="pl-2">
-            <h3 class="font-semibold text-slate-700 mb-1">Processing Time</h3>
-            <p>After uploading, please allow some time for processing:</p>
-            <ul class="list-disc list-outside pl-5 mt-1 space-y-1">
-              <li><strong>Small files (under 5 MB):</strong> Typically ~30 seconds to 1 minute.</li>
-              <li><strong>Larger files (up to 50 MB):</strong> May take a few minutes.</li>
-            </ul>
-            <p class="mt-1">Processing involves data extraction, table detection, and schema inference via the Gemini API.</p>
-          </li>
-          <li class="pl-2">
-            <h3 class="font-semibold text-slate-700 mb-1">Supported Data Structures</h3>
-            <p>TransformEXL AI supports:</p>
-            <ul class="list-disc list-outside pl-5 mt-1 space-y-1">
-              <li><strong>Single table per sheet:</strong> Standard Excel format.</li>
-              <li><strong>Multiple sheets per file:</strong> Each sheet can contain its own tables.</li>
-              <li><strong>Multiple tables in one sheet:</strong> Separate with empty rows/columns.</li>
-            </ul>
-            <p class="mt-2"><em class="text-slate-500">Reference images below illustrate these formats.</em></p>
-            <div class="mt-2 p-3 bg-green-50 border-l-4 border-green-500 text-green-700 rounded-md text-sm">
-              <p><strong class="font-medium">Best Practice:</strong> Cleaner layouts yield faster, more accurate results.</p>
-            </div>
-          </li>
-          <li class="pl-2">
-            <h3 class="font-semibold text-slate-700 mb-1">Unsupported Content</h3>
-            <p>Please avoid uploading files that contain:</p>
-            <ul class="list-disc list-outside pl-5 mt-1 space-y-1">
-              <li>Embedded images or charts (these will be ignored).</li>
-              <li>Complex macros (they won’t execute).</li>
-              <li>Password-protected files (remove protection first).</li>
-            </ul>
-          </li>
-          <li class="pl-2">
-            <h3 class="font-semibold text-slate-700 mb-1">Beta Program & Feedback</h3>
-            <p>
-              Beta access is <strong>free</strong>. We value your feedback on features, usability, and any issues.
-            </p>
-            <p>
-              Significant contributors may receive <strong>special perks</strong> as our thanks!
-            </p>
-            <div class="mt-2 p-3 bg-indigo-50 border-l-4 border-indigo-500 text-indigo-700 rounded-md text-sm">
-              <p><strong class="font-medium">Thank you for helping us improve!</strong></p>
-            </div>
-          </li>
-        </ol>
-      </section>
-
-      <section class="mt-10 p-6 md:p-8 bg-white rounded-xl shadow-xl">
-        <h2 class="text-2xl font-semibold mb-4 text-slate-700 border-b pb-2">
-          Reference: Supported Excel Formats
-        </h2>
-        <p class="text-slate-600 mb-4">Examples of Excel structures our AI processes:</p>
-        <div class="grid md:grid-cols-2 gap-6">
-          <div>
-            <h4 class="font-medium text-slate-700 mb-2">Example 1: Single Table per Sheet</h4>
-            <div class="border rounded-lg p-4 bg-slate-100 text-sm text-slate-500 h-48 flex items-center justify-center">
-              [Image placeholder for a clean Excel sheet with one table]
-            </div>
+    <!-- Setup & Initial Walkthrough -->
+    <section class="mb-10 p-6 md:p-8 bg-white rounded-xl shadow-xl">
+      <h2 class="text-2xl font-semibold mb-6 text-slate-700 border-b pb-3">Setup & Initial Walkthrough</h2>
+      <ol class="list-decimal list-outside space-y-8 pl-5 text-slate-600">
+        <li>
+          <h3 class="font-semibold text-slate-700 mb-1">File Uploads</h3>
+          <p>You can upload files in the following formats: <code>.xlsx</code>, <code>.xls</code>, <code>.csv</code>.</p>
+          <p>The maximum file size is currently <strong>50 MB per file</strong>. For larger datasets, consider splitting files or uploading sequentially.</p>
+          <div class="mt-2 p-3 bg-blue-50 border-l-4 border-blue-400 text-blue-700 rounded-md text-sm">
+            <p><strong>Tip:</strong> If you want to process larger files, split them into smaller ones or ensure your network is stable during uploads.</p>
           </div>
-          <div>
-            <h4 class="font-medium text-slate-700 mb-2">Example 2: Multiple Tables in One Sheet</h4>
-            <div class="border rounded-lg p-4 bg-slate-100 text-sm text-slate-500 h-48 flex items-center justify-center">
-              [Image placeholder for separated tables]
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+        </li>
 
+        <li>
+          <h3 class="font-semibold text-slate-700 mb-1">Processing Time</h3>
+          <p>Processing time depends on file size and complexity:</p>
+          <ul class="list-disc list-outside pl-5 mt-1 space-y-1">
+            <li><strong>Under 5 MB:</strong> Approximately 30 seconds to 1 minute.</li>
+            <li><strong>Up to 50 MB:</strong> May take a few minutes.</li>
+          </ul>
+          <p class="mt-1">This includes data extraction, table detection, and schema inference powered by the Gemini API.</p>
+        </li>
+
+        <li>
+          <h3 class="font-semibold text-slate-700 mb-1">Setting Up Workspaces</h3>
+          <p>Workspaces are your personal areas to explore and query data:</p>
+          <ul class="list-disc list-outside pl-5 mt-1 space-y-1">
+            <li>Create a workspace by uploading your spreadsheet and naming the workspace.</li>
+            <li>The system auto-detects tables and presents them as separate entities.</li>
+            <li>Work with tables individually or collectively based on your preference.</li>
+          </ul>
+          <p>Currently, each user has access to one workspace; additional workspaces are planned based on feedback.</p>
+        </li>
+
+        <li>
+          <h3 class="font-semibold text-slate-700 mb-1">Semi-Auto & Auto Modes</h3>
+          <p>Choose your workflow mode:</p>
+          <ul class="list-disc list-outside pl-5 mt-1 space-y-1">
+            <li><strong>Auto Mode:</strong> Queries run across all detected tables simultaneously.</li>
+            <li><strong>Semi-Auto Mode:</strong> Select specific tables and columns to target your queries.</li>
+          </ul>
+        </li>
+
+        <li>
+          <h3 class="font-semibold text-slate-700 mb-1">Plotting & Saving Results</h3>
+          <p>After executing a query (generated or manual SQL), view results in the results pane. Suggested plot types include pie charts, bar graphs, scatter plots, and more. You can save result sets and visualizations for future reference.</p>
+        </li>
+
+        <li>
+          <h3 class="font-semibold text-slate-700 mb-1">Supported Data Structures</h3>
+          <p>Supported formats include:</p>
+          <ul class="list-disc list-outside pl-5 mt-1 space-y-1">
+            <li>Single table per sheet.</li>
+            <li>Multiple sheets in one file.</li>
+            <li>Multiple tables in a single sheet (separated by empty rows or columns).</li>
+          </ul>
+          <div class="mt-2 p-3 bg-green-50 border-l-4 border-green-500 text-green-700 rounded-md text-sm">
+            <p><strong>Best Practice:</strong> Ensure clean layouts and consistent header rows for optimal detection.</p>
+          </div>
+        </li>
+
+        <li>
+          <h3 class="font-semibold text-slate-700 mb-1">Unsupported Content</h3>
+          <p>Avoid uploading files containing:</p>
+          <ul class="list-disc list-outside pl-5 mt-1 space-y-1">
+            <li>Embedded images or charts (these are ignored).</li>
+            <li>Complex macros (these will not execute).</li>
+            <li>Password-protected files (remove protection first).</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <!-- What's Next -->
+    <section class="mt-10 p-6 md:p-8 bg-white rounded-xl shadow-xl">
+      <h2 class="text-2xl font-semibold mb-4 text-slate-700 border-b pb-2">What's Next?</h2>
+      <ul class="list-disc list-outside pl-5 text-slate-600 space-y-2">
+        <li>Save your uploaded spreadsheet files in a database format for offline work.</li>
+        <li>Pipeline your SQL query results by feeding result tables into subsequent queries.</li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
     <footer class="text-center mt-16 pt-8 border-t border-slate-200">
-      <p class="text-sm text-slate-500">
-        © <script>document.write(new Date().getFullYear());</script> TransformEXL AI. All rights reserved.
-      </p>
+      <p class="text-sm text-slate-500">© <script>document.write(new Date().getFullYear());</script> TransformEXL AI. All rights reserved.</p>
     </footer>
   </div>
-
 </body>
 </html>
