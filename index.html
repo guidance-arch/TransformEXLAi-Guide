@@ -43,55 +43,6 @@
       </div>
     </section>
 
-<!-- IMPORTANT TO NOTE Section -->
-<section class="mb-10 p-6 md:p-8 bg-yellow-50 rounded-xl shadow-xl">
-  <h2 class="text-2xl font-semibold mb-4 text-slate-800 border-b pb-2">IMPORTANT TO NOTE</h2>
-  <div class="space-y-8 text-slate-700">
-    <!-- Supported Table Formats -->
-    <div>
-      <h3 class="font-semibold mb-4">Supported Table Formats</h3>
-      <div class="space-y-6">
-        <div class="text-center">
-          <img src="DUALHEADER.jpg"
-               alt="Dual Header Example"
-               class="mx-auto rounded-md shadow w-3/4 md:w-1/2 h-auto object-contain" />
-          <p class="mt-2 text-sm">Dual Header</p>
-        </div>
-        <div class="text-center">
-          <img src="SINGLEHEADER.jpg"
-               alt="Single Header Example"
-               class="mx-auto rounded-md shadow w-3/4 md:w-1/2 h-auto object-contain" />
-          <p class="mt-2 text-sm">Single Header</p>
-        </div>
-
-      </div>
-      <p class="mt-4 text-sm italic">Apart from these formats, other table layouts are not currently supported.</p>
-    </div>
-    <div>
-      <h3 class="font-semibold mb-4">ACCEPTED</h3>
-      <div class="text-center">
-        <img src="MULTIHEADERACC.jpg"
-             alt="Not Accepted Example"
-             class="mx-auto rounded-md shadow w-3/4 md:w-2/3 h-auto object-contain" />
-        <p class="mt-2 text-sm">This format is completely supported.</p>
-      </div>
-    </div>
-  </div>
-    <!-- Not Supported -->
-    <div>
-      <h3 class="font-semibold mb-4">Not Supported (Work Under Progress)</h3>
-      <div class="text-center">
-        <img src="NOTACCEPTED.jpg"
-             alt="Not Accepted Example"
-             class="mx-auto rounded-md shadow w-3/4 md:w-2/3 h-auto object-contain" />
-        <p class="mt-2 text-sm">This format is not supported yet.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
     <!-- Setup & Initial Walkthrough -->
     <section class="mb-10 p-6 md:p-8 bg-white rounded-xl shadow-xl">
       <h2 class="text-2xl font-semibold mb-6 text-slate-700 border-b pb-3">Setup & Initial Walkthrough</h2>
@@ -99,12 +50,69 @@
         <li>
           <h3 class="font-semibold text-slate-700 mb-1">File Uploads</h3>
           <p>You can upload files in the following formats: <code>.xlsx</code>, <code>.xls</code>, <code>.csv</code>.</p>
-          <p>The maximum file size is currently <strong>50 MB per file</strong>. For larger datasets, consider splitting files or uploading sequentially.</p>
+          <p>The maximum file size is currently <strong>50 MB per file</strong>. For larger datasets, consider splitting files or uploading sequentially.</p>
           <div class="mt-2 p-3 bg-blue-50 border-l-4 border-blue-400 text-blue-700 rounded-md text-sm">
             <p><strong>Tip:</strong> If you need to process larger files, split them into smaller ones or ensure a stable network during uploads.</p>
           </div>
         </li>
-        <!-- ... rest of your existing walkthrough items ... -->
+
+        <li>
+          <h3 class="font-semibold text-slate-700 mb-1">Processing Time</h3>
+          <p>Processing time depends on file size and complexity:</p>
+          <ul class="list-disc list-outside pl-5 mt-1 space-y-1">
+            <li><strong>Under 5 MB:</strong> Approximately 30 seconds to 1 minute.</li>
+            <li><strong>Up to 50 MB:</strong> May take a few minutes.</li>
+          </ul>
+          <p class="mt-1">This includes intelligent data extraction, table detection, and schema inference powered by advanced AI algorithms.</p>
+        </li>
+
+        <li>
+          <h3 class="font-semibold text-slate-700 mb-1">Setting Up Workspaces</h3>
+          <p>Workspaces are your personal areas to explore and query data:</p>
+          <ul class="list-disc list-outside pl-5 mt-1 space-y-1">
+            <li>Create a workspace by uploading your spreadsheet and naming the workspace.</li>
+            <li>The system auto-detects tables and presents them as separate entities.</li>
+            <li>Work with tables individually or collectively based on your preference.</li>
+          </ul>
+          <p>Currently, each user has access to one workspace; additional workspaces are planned based on feedback.</p>
+        </li>
+
+        <li>
+          <h3 class="font-semibold text-slate-700 mb-1">Semi-Auto & Auto Modes</h3>
+          <p>Choose your workflow mode:</p>
+          <ul class="list-disc list-outside pl-5 mt-1 space-y-1">
+            <li><strong>Auto Mode:</strong> Queries run across all detected tables simultaneously.</li>
+            <li><strong>Semi-Auto Mode:</strong> Select specific tables and columns to target your queries.</li>
+          </ul>
+        </li>
+
+        <li>
+          <h3 class="font-semibold text-slate-700 mb-1">Plotting & Saving Results</h3>
+          <p>After executing a query (generated or manual SQL), view results in the results pane. Suggested plot types include pie charts, bar graphs, scatter plots, and more. You can save result sets and visualizations for future reference.</p>
+        </li>
+
+        <li>
+          <h3 class="font-semibold text-slate-700 mb-1">Supported Data Structures</h3>
+          <p>Supported formats include:</p>
+          <ul class="list-disc list-outside pl-5 mt-1 space-y-1">
+            <li>Single table per sheet.</li>
+            <li>Multiple sheets in one file.</li>
+            <li>Multiple tables in a single sheet (separated by empty rows or columns).</li>
+          </ul>
+          <div class="mt-2 p-3 bg-green-50 border-l-4 border-green-500 text-green-700 rounded-md text-sm">
+            <p><strong>Best Practice:</strong> Ensure clean layouts and consistent header rows for optimal detection.</p>
+          </div>
+        </li>
+
+        <li>
+          <h3 class="font-semibold text-slate-700 mb-1">Unsupported Content</h3>
+          <p>Avoid uploading files containing:</p>
+          <ul class="list-disc list-outside pl-5 mt-1 space-y-1">
+            <li>Embedded images or charts (these are ignored).</li>
+            <li>Complex macros (these will not execute).</li>
+            <li>Password-protected files (remove protection first).</li>
+          </ul>
+        </li>
       </ol>
     </section>
 
